@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravi Tech - Latest Gaming News</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-fire"></i>
+                <span>Ravi Tech</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#news" class="nav-link">News</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reviews" class="nav-link">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#esports" class="nav-link">Esports</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#guides" class="nav-link">Guides</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" title="Change Theme">
+                    <i class="fas fa-palette"></i>
+                </button>
+                <img src="profile3.png.png" alt="Profile" class="profile-pic-nav" id="profilePicNav" />
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="sliding-title">Latest Gaming News</h1>
+            <div class="hero-buttons">
+                <button class="hero-btn"><i class="fas fa-eye"></i> Views</button>
+                <button class="hero-btn"><i class="fas fa-star"></i> Reviews</button>
+                <button class="hero-btn subscribe-btn"><i class="fas fa-bell"></i> Subscribe</button>
+            </div>
+            <p>Stay updated with the hottest gaming trends, releases, and industry insights</p>
+            <button class="cta-button" id="exploreNewsBtn"><i class="fas fa-gamepad"></i> Explore News</button>
+        </div>
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-element">🔥</div>
+                <div class="floating-element">⚡</div>
+                <div class="floating-element">💀</div>
+                <div class="floating-element">👹</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Modal -->
+    <div class="news-modal" id="newsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Gaming News Categories</h2>
+                <button class="close-modal" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="news-categories">
+                    <div class="category-tabs">
+                        <button class="category-tab active" data-category="breaking">
+                            <i class="fas fa-fire"></i>
+                            Breaking News
+                        </button>
+                        <button class="category-tab" data-category="esports">
+                            <i class="fas fa-trophy"></i>
+                            Esports
+                        </button>
+                        <button class="category-tab" data-category="technology">
+                            <i class="fas fa-microchip"></i>
+                            Technology
+                        </button>
+                        <button class="category-tab" data-category="daily">
+                            <i class="fas fa-calendar-day"></i>
+                            Daily Updates
+                        </button>
+                    </div>
+                    
+                    <div class="category-content">
+                        <!-- Breaking News Content -->
+                        <div class="category-panel active" id="breaking">
+                            <div class="news-grid-modal">
+                                <article class="news-card-modal">
+                                    <div class="news-image-modal">
+                                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Breaking News">
+                                        <div class="news-category-modal breaking">Breaking</div>
+                                    </div>
+                                    <div class="news-content-modal">
+                                        <h3>Major Console Release Announced</h3>
+                                        <p>Revolutionary new gaming console promises 4K gaming at 120fps with ray tracing...</p>
+                                        <div class="news-meta-modal">
+                                            <span class="news-date">1 hour ago</span>
+                                            <span class="news-author">By Gaming Editor</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                                <article class="news-card-modal">
+                                    <div class="news-image-modal">
+                                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Breaking News">
+                                        <div class="news-category-modal breaking">Breaking</div>
+                                    </div>
+                                    <div class="news-content-modal">
+                                        <h3>Gaming Industry Merger Shocks Community</h3>
+                                        <p>Two major gaming companies announce historic merger worth billions...</p>
+                                        <div class="news-meta-modal">
+                                            <span class="news-date">3 hours ago</span>
+                                            <span class="news-author">By Industry Reporter</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                                <article class="news-card-modal">
+                                    <div class="news-image-modal">
+                                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Breaking News">
+                                        <div class="news-category-modal breaking">Breaking</div>
+                                    </div>
+                                    <div class="news-content-modal">
+                                        <h3>Revolutionary VR Technology Unveiled</h3>
+                                        <p>New VR headset promises to revolutionize gaming with brain-computer interface...</p>
+                                        <div class="news-meta-modal">
+                                            <span class="news-date">5 hours ago</span>
+                                            <span class="news-author">By Tech Writer</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Esports Content -->
+                        <div class="category-panel" id="esports">
+                            <div class="news-grid-modal">
+                                <article class="news-card-modal">
+                                    <div class="news-image-modal">
+                                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Esports">
+                                        <div class="news-category-modal esports">Esports</div>
+                                    </div>
+                                    <div class="news-content-modal">
+                                        <h3>World Championship Finals Set</h3>
+                                        <p>Top teams prepare for the ultimate showdown in this year's biggest tournament...</p>
+                                        <div class="news-meta-modal">
+                                            <span class="news-date">2 hours ago</span>
+                                            <span class="news-author">By Esports Reporter</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                                <article class="news-card-modal">
+                                    <div class="news-image-modal">
+                                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Esports">
+                                        <div class="news-category-modal esports">Esports</div>
+                                    </div>
+                                    <div class="news-content-modal">
+                                        <h3>Pro Player Transfer Window Opens</h3>
+                                        <p>Major roster changes expected as transfer season begins for top teams...</p>
+                                        <div class="news-meta-modal">
+                                            <span class="news-date">6 hours ago</span>
+                                            <span class="news-author">By Esports Analyst</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                                <article class="news-card-modal">
+                                    <div class="news-image-modal">
+                                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Esports">
+                                        <div class="news-category-modal esports">Esports</div>
+                                    </div>
+                                    <div class="news-content-modal">
+                                        <h3>New Esports League Announced</h3>
+                                        <p>International gaming league with $10 million prize pool announced...</p>
+                                        <div class="news-meta-modal">
+                                            <span class="news-date">1 day ago</span>
+                                            <span class="news-author">By League Commissioner</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Technology Content -->
+                        <div class="category-panel" id="technology">
+                            <div class="news-grid-modal">
+                                <article class="news-card-modal">
+                                    <div class="news-image-modal">
+                                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Technology">
+                                        <div class="news-category-modal technology">Technology</div>
+                                    </div>
+                                    <div class="news-content-modal">
+                                        <h3>AI-Powered Gaming Breakthrough</h3>
+                                        <p>New AI technology creates dynamic game worlds that adapt to player behavior...</p>
+                                        <div class="news-meta-modal">
+                                            <span class="news-date">4 hours ago</span>
+                                            <span class="news-author">By Tech Writer</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                                <article class="news-card-modal">
+                                    <div class="news-image-modal">
+                                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Technology">
+                                        <div class="news-category-modal technology">Technology</div>
+                                    </div>
+                                    <div class="news-content-modal">
+                                        <h3>Cloud Gaming Revolution</h3>
+                                        <p>New cloud gaming service promises console-quality games on any device...</p>
+                                        <div class="news-meta-modal">
+                                            <span class="news-date">8 hours ago</span>
+                                            <span class="news-author">By Cloud Gaming Expert</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                                <article class="news-card-modal">
+                                    <div class="news-image-modal">
+                                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Technology">
+                                        <div class="news-category-modal technology">Technology</div>
+                                    </div>
+                                    <div class="news-content-modal">
+                                        <h3>Next-Gen Graphics Technology</h3>
+                                        <p>Revolutionary rendering technology promises photorealistic graphics...</p>
+                                        <div class="news-meta-modal">
+                                            <span class="news-date">1 day ago</span>
+                                            <span class="news-author">By Graphics Engineer</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Daily Updates Content -->
+                        <div class="category-panel" id="daily">
+                            <div class="news-grid-modal">
+                                <article class="news-card-modal">
+                                    <div class="news-image-modal">
+                                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Daily Updates">
+                                        <div class="news-category-modal daily">Daily</div>
+                                    </div>
+                                    <div class="news-content-modal">
+                                        <h3>Today's Game Releases</h3>
+                                        <p>Check out the latest games hitting shelves and digital stores today...</p>
+                                        <div class="news-meta-modal">
+                                            <span class="news-date">Updated 2 hours ago</span>
+                                            <span class="news-author">By Release Tracker</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                                <article class="news-card-modal">
+                                    <div class="news-image-modal">
+                                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Daily Updates">
+                                        <div class="news-category-modal daily">Daily</div>
+                                    </div>
+                                    <div class="news-content-modal">
+                                        <h3>Gaming Industry Roundup</h3>
+                                        <p>Your daily digest of the most important gaming industry news...</p>
+                                        <div class="news-meta-modal">
+                                            <span class="news-date">Updated 6 hours ago</span>
+                                            <span class="news-author">By Daily Reporter</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                                <article class="news-card-modal">
+                                    <div class="news-image-modal">
+                                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Daily Updates">
+                                        <div class="news-category-modal daily">Daily</div>
+                                    </div>
+                                    <div class="news-content-modal">
+                                        <h3>Community Highlights</h3>
+                                        <p>Today's top gaming community moments, memes, and discussions...</p>
+                                        <div class="news-meta-modal">
+                                            <span class="news-date">Updated 12 hours ago</span>
+                                            <span class="news-author">By Community Manager</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured News -->
+    <section class="featured-news" id="news">
+        <div class="container">
+            <h2 class="section-title">Featured News</h2>
+            <div class="news-grid">
+                <article class="news-card featured">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gaming News">
+                        <div class="news-category">Breaking</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>Major Gaming Console Release Announced</h3>
+                        <p>The gaming industry is buzzing with excitement as a new console promises revolutionary graphics and performance...</p>
+                        <div class="news-meta">
+                            <span class="news-date">2 hours ago</span>
+                            <span class="news-author">By Gaming Editor</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Esports">
+                        <div class="news-category">Esports</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>World Championship Finals Set</h3>
+                        <p>Top teams prepare for the ultimate showdown in this year's biggest esports tournament...</p>
+                        <div class="news-meta">
+                            <span class="news-date">5 hours ago</span>
+                            <span class="news-author">By Esports Reporter</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Gaming Tech">
+                        <div class="news-category">Technology</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>New Gaming Technology Breakthrough</h3>
+                        <p>Revolutionary AI-powered gaming technology promises to change how we play forever...</p>
+                        <div class="news-meta">
+                            <span class="news-date">1 day ago</span>
+                            <span class="news-author">By Tech Writer</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="latest-news">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+            <div class="news-list">
+                <article class="news-item">
+                    <div class="news-item-image">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="News">
+                    </div>
+                    <div class="news-item-content">
+                        <div class="news-category">Release</div>
+                        <h3>Highly Anticipated RPG Finally Gets Release Date</h3>
+                        <p>Fans have been waiting years for this epic adventure, and now the wait is almost over...</p>
+                        <div class="news-meta">
+                            <span class="news-date">3 hours ago</span>
+                            <span class="news-author">By Game Reviewer</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item">
+                    <div class="news-item-image">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="News">
+                    </div>
+                    <div class="news-item-content">
+                        <div class="news-category">Industry</div>
+                        <h3>Gaming Industry Revenue Reaches New Heights</h3>
+                        <p>The gaming market continues to grow exponentially, setting new records for revenue...</p>
+                        <div class="news-meta">
+                            <span class="news-date">6 hours ago</span>
+                            <span class="news-author">By Industry Analyst</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item">
+                    <div class="news-item-image">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="News">
+                    </div>
+                    <div class="news-item-content">
+                        <div class="news-category">Mobile</div>
+                        <h3>Mobile Gaming Revolution Continues</h3>
+                        <p>New mobile games are pushing the boundaries of what's possible on smartphones...</p>
+                        <div class="news-meta">
+                            <span class="news-date">1 day ago</span>
+                            <span class="news-author">By Mobile Gaming Expert</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get the latest gaming news delivered to your inbox</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-fire"></i>
+                        <span>Ravi Tech</span>
+                    </div>
+                    <p>Your ultimate source for gaming news, reviews, and insights.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Esports</a></li>
+                        <li><a href="#">Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ravi Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="profile-modal" id="profileModal">
+        <div class="profile-modal-content">
+            <button class="close-profile-modal" id="closeProfileModal" title="Close">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="profile3.png.png" alt="Profile Large" class="profile-pic-large" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
